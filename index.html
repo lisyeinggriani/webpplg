@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Website pembelajaran PPLG" />
+    <meta name="author" content="Siswa PPLG" />
+
+    <title>Website PPLG</title>
+    <link rel="stylesheet" href="style.css">
+   
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <h1 id="judul-utama">WEBSITE PPLG</h1>
+      <p>Pengembangan Perangkat Lunak dan Gim</p>
+    </header>
+
+    <!-- NAVIGASI -->
+    <nav>
+      <a href="#beranda">Beranda</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#materi">Materi</a>
+      <a href="#data">Data</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+
+    <!-- KONTEN UTAMA -->
+    <main>
+      <!-- SECTION BERANDA -->
+      <section id="beranda">
+        <h2>Selamat Datang</h2>
+
+        <p>Selamat datang di website pembelajaran Pengembangan Perangkat Lunak dan Gim. Website ini digunakan untuk mempelajari HTML dan CSS.</p>
+
+        <a href="#materi" class="tombol"> Pelajari Materi </a>
+      </section>
+
+      <!-- SECTION TENTANG -->
+      <section id="tentang">
+        <h2>Tentang PPLG</h2>
+
+        <article>
+          <h3>Apa Itu PPLG?</h3>
+
+          <p>PPLG merupakan bidang keahlian yang mempelajari pengembangan perangkat lunak, website, aplikasi, jaringan, dan gim.</p>
+
+          <figure>
+            <img class="gambar-utama" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1000" alt="Komputer untuk kegiatan pemrograman" />
+
+            <figcaption>Gambar kegiatan pengembangan perangkat lunak.</figcaption>
+          </figure>
+
+          <details>
+            <summary>Informasi tambahan</summary>
+            <p>Siswa PPLG dapat mempelajari HTML, CSS, JavaScript, PHP, database, dan teknologi lainnya.</p>
+          </details>
+        </article>
+      </section>
+
+      <!-- SECTION MATERI -->
+      <section id="materi">
+        <h2>Materi Pembelajaran</h2>
+
+        <section class="container-kartu">
+          <article class="kartu">
+            <h3>HTML</h3>
+            <p>HTML digunakan untuk membuat struktur halaman website.</p>
+            <a href="#" class="tombol">Pelajari</a>
+          </article>
+
+          <article class="kartu">
+            <h3>CSS</h3>
+            <p>CSS digunakan untuk mengatur tampilan dan desain website.</p>
+            <a href="#" class="tombol">Pelajari</a>
+          </article>
+
+          <article class="kartu">
+            <h3>JavaScript</h3>
+            <p>JavaScript digunakan untuk membuat website interaktif.</p>
+            <a href="#" class="tombol">Pelajari</a>
+          </article>
+        </section>
+      </section>
+
+      <!-- SECTION LIST -->
+      <section>
+        <h2>Kompetensi Keahlian</h2>
+
+        <h3>Materi yang Dipelajari</h3>
+
+        <ul>
+          <li>HTML dan CSS</li>
+          <li>JavaScript</li>
+          <li>PHP dan Database</li>
+          <li>Pemrograman Berorientasi Objek</li>
+        </ul>
+
+        <h3>Urutan Membuat Website</h3>
+
+        <ol>
+          <li>Membuat struktur HTML</li>
+          <li>Membuat desain CSS</li>
+          <li>Menambahkan JavaScript</li>
+          <li>Melakukan pengujian</li>
+        </ol>
+
+        <p>
+          HTML merupakan
+          <strong>bahasa markup</strong>, bukan bahasa pemrograman.
+          <em>HTML berfungsi menyusun konten website.</em>
+        </p>
+
+        <blockquote>Belajar pemrograman dimulai dari memahami struktur dan logika.</blockquote>
+
+        <p>
+          Contoh kode:
+          <code>h1</code>, <code>p</code>, dan <code>section</code>.
+        </p>
+      </section>
+
+      <!-- SECTION TABEL -->
+      <section id="data">
+        <h2>Data Siswa PPLG</h2>
+
+        <table>
+          <caption>
+            Contoh Data Siswa
+          </caption>
+
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Nama</th>
+              <th>Kelas</th>
+              <th>Kompetensi</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Andi</td>
+              <td>XI PPLG</td>
+              <td>HTML</td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td>Budi</td>
+              <td>XI PPLG</td>
+              <td>CSS</td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td colspan="3">Jumlah Siswa</td>
+              <td>2 Orang</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <!-- SECTION FORM -->
+      <section id="kontak">
+        <h2>Formulir Kontak</h2>
+
+        <form class="form-kontak">
+          <label for="nama">Nama Lengkap</label>
+          <input type="text" id="nama" name="nama" placeholder="Masukkan nama" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Masukkan email" />
+
+          <label for="kelas">Kelas</label>
+          <select id="kelas" name="kelas">
+            <option>XI PPLG 1</option>
+            <option>XI PPLG 2</option>
+            <option>XI PPLG 3</option>
+          </select>
+
+          <label for="pesan">Pesan</label>
+          <textarea id="pesan" name="pesan" rows="4" placeholder="Tulis pesan"> </textarea>
+
+          <button type="submit">Kirim</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <address>
+        Program Keahlian PPLG<br />
+        SMK - Indonesia
+      </address>
+
+      <p>&copy; 2026 Website Pembelajaran PPLG</p>
+
+      <small>Dibuat untuk pembelajaran HTML dan CSS.</small>
+    </footer>
+  </body>
+</html>
